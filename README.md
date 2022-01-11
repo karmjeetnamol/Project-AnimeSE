@@ -1,1 +1,2 @@
-# Project-Japanese-AnimeSE
+# Project-AnimeSE
+
