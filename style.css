@@ -7,6 +7,11 @@
     background:#333;
 
 }
+.vis {
+    height: 38.78px;
+    background-color: blue;
+    width: 5px;
+}
 .menu {
     background:#333;
 }
@@ -24,6 +29,12 @@ main {
     width: fit-content;
     justify-content: end;
     align-self: center;
+}
+.hidden {
+    visibility: hidden;
+}
+.s {
+    color:black;
 }
 
 body{

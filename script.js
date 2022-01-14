@@ -1,13 +1,15 @@
 var searchBtn = document.querySelector('button');
 var searchVal = document.querySelector('.searchVal');
-var requestUrl;
 var aTag = document.querySelector('.a-tag');
 var iTag = document.querySelector('.img-tag');
-var spanText = document.querySelector('span');
+var spanText = document.querySelector('.span1');
+var card = document.querySelector('.hidden');
+var btn = document.querySelector('.vis');
+var s = document.querySelector('.s');
 
 
 function getUrl() {
-    requestUrl = 'https://api.jikan.moe/v3/search/anime?q=Naruto' + searchVal.value;
+    var requestUrl = 'https://api.jikan.moe/v3/search/anime?q=Naruto' + searchVal.value;
     console.log(requestUrl);
     function getApi(request) {
         fetch(request)
@@ -20,9 +22,14 @@ function getUrl() {
                 iTag.setAttribute('src', data.results[0].image_url);
                 iTag.setAttribute('alt', data.results[0].title);
                 spanText.innerHTML = data.results[0].title;
+                s.innerHTML = data.results[0].synopsis;
             });
 
     }
     getApi(requestUrl);
 }
 searchBtn.addEventListener('click', getUrl());
+btn.onclick = function() {
+    card.style.visibility = 'visible';
+}
+
