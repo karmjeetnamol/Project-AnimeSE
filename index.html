@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <section class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-        <div class="title-bar-title">Menu</div>
-    </div>
+        <section class="title-bar-title">Menu</section>
+    </section>
     <div class="top-bar" id="responsive-menu">
         <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
@@ -32,32 +32,42 @@
                 <li><a href="#0">Movies</a></li>
             </ul>
         </div>
-        <div class="top-bar-right">
+        <section class="top-bar-right">
             <ul class="menu">
-                <li><input class="searchVal" type="search" placeholder="Search" value=""></li>
+                <li><input class="searchVal" type="search" placeholder="Search for an Anime" value=""></li>
                 <li><button type="button" class="button">Search</button></li>
             </ul>
-        </div>
+        </section>
     </div>
     <h1>Japanese Anime</h1>
-    <aside id="Anime-Recommendations">
-        <figure id="Anime-Characters">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93sfjcecSpZxp86DueLHQajh0XXhdC05cuQ&usqp=CAU"
-                alt="Japanese Anime Character" />
-        </figure>
-        <strong>Recommended Anime:</strong>
-    </aside>
+    <main>
+        <aside id="Anime-Recommendations">
+            <strong>Anime Recommendations:</strong>
+            <img src="./Screenshot 2022-01-14 095616.jpg" alt="One Piece">
+            <img src="./Screenshot 2022-01-14 095833.jpg" alt="Grand Blue">
+            <img src="./Screenshot 2022-01-14 100005.jpg" alt="Code Geass">
+        </aside>
+        <section class='card'><a class='a-tag' href="">
+                <section><img class='img-tag' src="" alt=""></section>
+                <section><span></span></section>
+            </a></section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XFZxbKmUCp0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <img class='crunchyroll' src="./Screenshot 2022-01-14 113153.jpg" alt="crunchyroll app">
+    </main>
     <footer class="footer">
         <h2>Made with ❤️️ by Team 9</h2>
         <p>
             &copy; 2022 Get Rewared Japanese Anime Fans
         </p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-
+    <small>
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </small>
 </body>
 
 </html>
