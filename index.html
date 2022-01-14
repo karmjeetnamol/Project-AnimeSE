@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japanese Anime</title>
+    <title>Anime Search Engine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="top-bar" id="responsive-menu">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Anime Search Engine</li>
+                <li class="has-submenu">
+                    <a href="#0">Anime</a>
+                    <ul class="submenu menu vertical" data-submenu>
+                        <li><a href="#0">Series</a></li>
+                        <li><a href="#0">Characters</a></li>
+                        <li><a href="#0">Figures</a></li>
+                    </ul>
+                </li>
+                <li><a href="#0">Manga</a></li>
+                <li><a href="#0">Movies</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input class="searchVal" type="search" placeholder="Search" value=""></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul>
+        </div>
+    </div>
     <h1>Japanese Anime</h1>
-   <nav> 
-    <ul>
-        <li>
-            <a href="Japanese Anime Link">Japanese Anime</a>
-        </li>
-        <li>
-            <a href="Character Link">Anime Characters</a>
-        </li>
-        <li>
-            <a href="Movie Link">Movies</a>
-        </li>
-        <input type="search" name="search" placeholder="Search.." class="animated-search-form">
-        <li>
-            <a href="Search Bar">Search</a>
-        </li>
-    </ul>
-    </nav>
+    <aside id="Anime-Recommendations">
+        <figure id="Anime-Characters">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93sfjcecSpZxp86DueLHQajh0XXhdC05cuQ&usqp=CAU"
+                alt="Japanese Anime Character" />
+        </figure>
+        <strong>Recommended Anime:</strong>
+    </aside>
+    <footer class="footer">
+        <h2>Made with ❤️️ by Team 9</h2>
+        <p>
+            &copy; 2022 Get Rewared Japanese Anime Fans
+        </p>
+    </footer>
 
-<main> 
-    
-     <article id="Japanese Anime Character">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93sfjcecSpZxp86DueLHQajh0XXhdC05cuQ&usqp=CAU" alt="Japanese Anime Character"/>
-   
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
-    </article>
-     <section>  
-        <aside id="Japanese Anime Character Descripton">
-            <img src="For description to Anime character" alt="Japanese Anime Character Descritption"/>
-       
-        </aside>
-    </section>
-</main>
-<footer class="footer">
-    <h2>Made with ❤️️ by Team 9</h2>
-    <p>
-        &copy; 2022 Get Rewared Japanese Anime Fans
-    </p>
-</footer>
-    
-<script src="script.js"></script>
 </body>
+
 </html>
-
-
-
