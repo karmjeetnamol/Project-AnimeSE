@@ -6,57 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Search Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="style2.sass">
     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <section class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-        <section class="title-bar-title">Menu</section>
-    </section>
-    <div class="top-bar" id="responsive-menu">
-        <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">Anime Search Engine</li>
-                <li class="has-submenu">
-                    <a href="#0">Anime</a>
-                    <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="#0">Series</a></li>
-                        <li><a href="#0">Characters</a></li>
-                        <li><a href="#0">Figures</a></li>
+    <aside id="Anime-Recommendations" class="off-canvas position-left reveal-for-large is-transition-push">
+        <strong>Anime Recommendations:</strong>
+        <ul id='rec' class='grid-y grid-padding-x'>
+            <li class='cell'><a class='card tiny' target="_blank" href="https://myanimelist.net/anime/31043/Boku_dake_ga_Inai_Machi"><figure><img src="https://cdn.myanimelist.net/images/anime/10/77957.jpg?s=27f147795f08191cf1a96a2b50e1756c" alt="Boku dake ga Inai Machi"><section class='card_name'></section></figure></a><span>Erased</span></li>
+
+            <li class='cell'><a class='card tiny' target="_blank" href="https://myanimelist.net/anime/36456/Boku_no_Hero_Academia_3rd_Season"><figure><img src="https://cdn.myanimelist.net/images/anime/1319/92084.jpg?s=35232941f9c872fd1f5af37fa389452b" alt="Boku no Hero Academia 3rd Season"><section class='card_name'></section></figure></a> <span>My Hero Academia</span></li>
+
+            <li class='cell'><a class='card tiny' target="_blank" href="https://myanimelist.net/anime/21/One_Piece"><figure><img src="https://cdn.myanimelist.net/images/anime/1770/97704.jpg?s=fda1d9fca3cd6c3108916ca7c10e9e34" alt="One_Piece"><section class='card_name'></section></figure></a> <span>One Piece</span></li>
+
+            <li class='cell'><a class='card tiny' target="_blank" href="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba"><figure><img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg?s=e497d08bef31ae412e314b90a54acfda" alt="Kimetsu no Yaiba"><section class='card_name'></section></figure></a><span>Kimetsu no Yaiba</span></li>
+        </ul>
+    </aside>
+
+    <div class="js-off-canvas-overlay is-overlay-fixed"></div>
+
+    <main class="off-canvas-content has-reveal-left">
+
+        <section class="callout custom-nav">
+            <section class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                <img class='crunch'
+                    src="https://yt3.ggpht.com/ytc/AKedOLQgw3p393tsGPtBSlxxgerfvAAAcxVKZbp_ZQTx2A=s900-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <h1>Japanese Anime</h1>
+                <img class='crunch2'
+                    src="https://yt3.ggpht.com/ytc/AKedOLQgw3p393tsGPtBSlxxgerfvAAAcxVKZbp_ZQTx2A=s900-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                    <p id='time'></p>
+            </section>
+            <div class="top-bar" id="responsive-menu">
+                <div class="top-bar-left">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li class="menu-text">Anime Search Engine</li>
+                        <li class="has-submenu">
+                            <a href="https://myanimelist.net/" target="_blank">Anime</a>
+                        </li>
+                        <li><a href="https://www.crunchyroll.com/" target="_blank">Watch</a></li>
+                        <li><a href="https://mangapark.net/" target="_blank">Manga</a></li>
+                        <li><a href="https://9anime.to/" target="_blank">Movies</a></li>
+                        <li><a href="https://store.steampowered.com/search/?term=anime" target="_blank">Games</a></li>
+                        <li><a href="https://store.crunchyroll.com/collections/figures" target="_blank">Figures</a></li>
+                        <li><a href="#">MyAnimeList</a></li>
                     </ul>
-                </li>
-                <li><a href="#0">Manga</a></li>
-                <li><a href="#0">Movies</a></li>
-            </ul>
-        </div>
-        <section class="top-bar-right">
-            <ul class="menu">
-                <li><input class="searchVal" type="search" placeholder="Search for an Anime" value=""></li>
-                <li><button type="button" class="button">Search</button></li>
-            </ul>
+                </div>
+                <section class="top-bar-right">
+                    <ul class="menu">
+                        <li><input class="searchVal" type="search" placeholder="Search for an Anime" value=""></li>
+                        <li><button type='buttton' id='myButton' class="button">Search</button></li>
+                    </ul>
+                </section>
+            </div>
         </section>
-    </div>
-    <h1>Japanese Anime</h1>
-    <main>
-        <aside id="Anime-Recommendations">
-            <strong>Anime Recommendations:</strong>
-            <img src="./Screenshot 2022-01-14 095616.jpg" alt="One Piece">
-            <img src="./Screenshot 2022-01-14 095833.jpg" alt="Grand Blue">
-            <img src="./Screenshot 2022-01-14 100005.jpg" alt="Code Geass">
-        </aside>
-        <section class='card'><a class='a-tag' href="">
-                <section><img class='img-tag' src="" alt=""></section>
-                <section><span></span></section>
-            </a></section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XFZxbKmUCp0" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <img class='crunchyroll' src="./Screenshot 2022-01-14 113153.jpg" alt="crunchyroll app">
+
+        <section class='grid-container'>
+            <section class='grid-x grid-margin-x'>
+                <iframe class='medium-6 cell' width="400" height="300" src="https://www.youtube.com/embed/XFZxbKmUCp0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <img class='crunchyroll medium-6 cell'
+                    src="https://qtxasset.com/quartz/qcloud4/media/image/fiercevideo/1598285083/CR-Premium_Tiers_PR16x9-Orbs.png?VersionId=MI6k77N8fy8R3ztZ0FzeoHq61ogBHsTO"
+                    alt="crunchyroll app">
+            </section>
+            <ul id='card' class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4"></ul>
+
+
+
+        </section>
     </main>
+
+
+
+
+
+
+
     <footer class="footer">
         <h2>Made with ❤️️ by Team 9</h2>
         <p>
@@ -66,7 +101,10 @@
     <small>
         <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
             crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script2.js"></script>
     </small>
 </body>
 
