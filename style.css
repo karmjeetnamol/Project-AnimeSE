@@ -3,15 +3,16 @@
     padding: 10px;
     margin: 0;
 }
+
+li {
+    list-style: none;
+}
+
 .top-bar {
     background:#333;
 
 }
-.vis {
-    height: 38.78px;
-    background-color: blue;
-    width: 5px;
-}
+
 .menu {
     background:#333;
 }
@@ -19,28 +20,18 @@
 span {  
     color: black;
 }
+
 main {
-    margin-left: 25px;
-    width: 100%;
+    width: 86%;
 }
 
 .card {
     border: royalblue solid;
     width: fit-content;
-    justify-content: end;
-    align-self: center;
-}
-.hidden {
-    visibility: hidden;
-}
-.s {
-    color:black;
 }
 
 body{
-    background-color:skyblue;
-    display: flex;
-    flex-direction:column;
+    background-color:rgb(52, 117, 143);
 }
 
 h1 {
@@ -51,19 +42,19 @@ h1 {
     border-width: thick;
     border-radius: 8px;
     font-size: 48px;
-    margin-left: 800px;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93sfjcecSpZxp86DueLHQajh0XXhdC05cuQ&usqp=CAU);
     text-shadow: 2px 2px 5px pink;
     width: fit-content;
+} 
+.custom-nav {
+    width: 100%;
 }
 
-.crunchyroll {
-    justify-content: end;
-    align-self: flex-end;
-}
 
 #Anime-Recommendations {
-    background-color: aquamarine;
+    background-color: rgb(81, 161, 135);
+    width: fit-content;
+    font-size: 12px;
 }
 
 .searchBar {
@@ -74,29 +65,44 @@ aside {
     border: solid #333;
     height: fit-content;
     width: 20%;
-    float: left;
-    margin-right:25px;
 }
 
 nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     width: 100%;
-    justify-content: space-around;
 }
-.searchBtn {
-    height: 39px;
-}
+
 
 iframe {
     border: #333 solid;
     margin: 5px;
-    justify-content: start;
-    align-self: flex-end;
+    background-color: rgb(81, 161, 135);
 }
+
+.tiny {
+    height:190px;
+    width: 150px;
+}
+
+.tiny-card {
+    height:190px;
+    width: 150px;
+    border: black solid;
+}
+
+.crunch {
+    height: 100px;
+    width: 100px;
+    margin-left: 450px;
+}
+
+.crunch2 {
+    height: 100px;
+    width: 100px;
+    margin-right: 100px;
+}
+
 
 nav ul li {
     margin-left: 150px;
@@ -110,8 +116,16 @@ div a {
     text-decoration: none;
 }
 
-li a:hover {
+div ul li a:hover {
     background-color: #333;
+}
+
+ul #card li:hover {
+    box-shadow: 10px 5px 5px skyblue;
+}
+
+.crunchyroll {
+    scale: 50%;
 }
 
 .footer {
