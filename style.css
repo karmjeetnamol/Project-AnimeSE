@@ -53,6 +53,7 @@ h1 {
 
 #Anime-Recommendations {
     background-color: aquamarine;
+   
 }
 
 .searchBar {
@@ -65,6 +66,15 @@ aside {
     width: 20%;
     float: left;
     margin-right:25px;
+}
+aside img {
+    background-color: crimson;
+ top: 100;
+ left: 100;
+}
+.column{
+    float: left;
+    width: 20%;
 }
 
 nav {
