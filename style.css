@@ -92,10 +92,15 @@ h1 {
 
 
 #Anime-Recommendations {
+<<<<<<< HEAD
     background-color: rgb(81, 161, 135);
     width: fit-content;
     font-size: 12px;
     font-weight: bold;
+=======
+    background-color: aquamarine;
+   
+>>>>>>> dev
 }
 
 .searchBar {
@@ -111,6 +116,15 @@ aside {
 aside img {
     width: 180px;
     height: 140px;
+}
+aside img {
+    background-color: crimson;
+ top: 100;
+ left: 100;
+}
+.column{
+    float: left;
+    width: 20%;
 }
 
 nav {
