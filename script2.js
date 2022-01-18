@@ -97,7 +97,7 @@ function refresh() {
 backBtn.addEventListener('click', home);
 
 function home() {
-    window.location.assign('file:///C:/Users/chris/code/Project1/Project-AnimeSE/index.html');
+    window.location.assign('https://uwhuskie.github.io/Project-AnimeSE/');
 }
 
 
